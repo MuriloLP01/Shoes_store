@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+header {
+  height: 122px;
+  width: 100%;
+  max-width: 100%;
+
+  background-color: #ffffff;
+  box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
+
+  position: relative;
+  z-index: 2;
+}
+
+header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo {
+  cursor: pointer;
+}
+
+header .opcoes button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .opcoes button {
+  text-decoration: none;
+  color: #777777;
+  font-size: 24px;
+}
+
+section.principal .container {
+  width: 100%;
+  height: 235px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.estilo .container h2 {
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+}
+
+section.estilo .container .imagens_principais {
+  width: 100%;
+  height: 758px;
+  max-width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+section.promocoes .container {
+  width: 100%;
+  max-width: 100%;
+  height: 662px;
+  background-color: #c2185b;
+  margin: 100px auto;
+}
+
+section.promocoes .container h2 {
+  font-size: 44px;
+  font-weight: 800;
+  height: 175px;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.promocoes .produtos_em_oferta {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+section.promocoes .produtos_em_oferta article {
+  background-color: #eeeeee;
+  width: 260px;
+  height: 388px;
+}
+
+section.promocoes .produtos_em_oferta article .thumb {
+  width: 260px;
+  height: 300px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.promocoes .container .produtos_em_oferta article .info .detalhes .nome {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  font-weight: 600px;
+}
+
+section.promocoes .produtos_em_oferta article .info p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+
+section.sandalias .container {
+  width: 1200px;
+  max-width: 100%;
+  height: 939px;
+  max-height: 100%;
+  margin: 100px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.sandalias .container .sandalia_esquerda {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+section.sandalias .container .sandalia_esquerda p {
+  font-size: 39px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+section.sandalias .container .sandalia_esquerda .botao button {
+  width: 403px;
+  height: 99px;
+  max-width: 100%;
+  max-height: 100%;
+
+  font-size: 39px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #c2185b;
+
+  padding: 23px 85px;
+  border: none;
+  cursor: pointer;
+}
+
+section.informacoes .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+section.informacoes h2 {
+  font-size: 39px;
+  font-weight: 600;
+  color: #575757;
+}
+
+section.informacoes .container .cadastro {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 0px 50px 0;
+  color: #575757;
+
+  display: flex;
+}
+
+section.informacoes .container .cadastro .contato,
+section.informacoes .container .cadastro .descricao {
+  width: 50%;
+  max-width: 100%;
+}
+
+section.informacoes .container .cadastro .descricao {
+  padding: 0 50px;
+}
+
+section.informacoes .container .cadastro .contato .opcoes {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+section.informacoes .container .cadastro .contato .opcoes p {
+  margin: 5px;
+  padding: 0;
+}
+
+section.informacoes .container .cadastro .contato .disponivel,
+section.informacoes .container .cadastro .contato .forma {
+  width: 33%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section.informacoes .container .cadastro .contato .opcoes input {
+  width: 20%;
+  width: 15px;
+  height: 15px;
+  background-color: #c4c4c4;
+  border: none;
+}
+
+section.informacoes .container .cadastro .contato .opcoes .checkbox.circulo {
+  border-radius: 50%;
+}
+
+section.informacoes .container .cadastro .contato form input,
+section.informacoes .container .cadastro .contato form textarea {
+  width: 100%;
+  padding: 7px;
+  margin: 10px 0;
+  resize: none;
+}
+
+section.informacoes .container .cadastro .contato form textarea {
+  padding: 30px;
+}
+
+section.informacoes .container .cadastro .descricao p {
+  width: 100%;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+section.informacoes .curriculo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+section.informacoes .container .cadastro .contato .enviar {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #c2185b;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #c2185b;
+  width: 100%;
+  height: 248px;
+  max-width: 100%;
+  max-height: 100%;
+
+  color: #ffffff;
+}
+
+footer .container {
+  width: 1200px;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer .container .marca {
+  width: 50%;
+  max-width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+footer .container .informacoes {
+  width: 50%;
+  height: 100%;
+  max-width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 30px;
+}
+
+footer .container .informacoes .titulo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer .container .informacoes .categorias,
+footer .container .informacoes .institucional {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer .container .informacoes .institucional a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  section.principal .container .materia_principal {
+    width: 100%;
+  }
+  section.principal .container .imagem_principal {
+    width: 100%;
+  }
+  section.principal .container .bloco_central.inverso {
+    flex-wrap: wrap-reverse;
+  }
+}
