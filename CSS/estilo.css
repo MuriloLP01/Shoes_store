@@ -22,6 +22,7 @@ header {
   height: 122px;
   width: 100%;
   max-width: 100%;
+  max-height: 100%;
 
   background-color: #ffffff;
   box-shadow: 0px 1px 20px rgba(139, 139, 139, 0.65);
@@ -56,6 +57,8 @@ header .opcoes button {
 section.principal .container {
   width: 100%;
   height: 235px;
+  max-height: 100%;
+  max-width: 100%;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,6 +74,7 @@ section.estilo .container h2 {
 section.estilo .container .imagens_principais {
   width: 100%;
   height: 758px;
+  max-height: 100%;
   max-width: 100%;
 
   display: flex;
@@ -79,10 +83,20 @@ section.estilo .container .imagens_principais {
   flex-wrap: wrap;
 }
 
+section.estilo .container .imagens_principais .maior {
+  width: 50%;
+  height: 100%;
+}
+section.estilo .container .imagens_principais .menor {
+  width: 33%;
+  height: 79%;
+}
+
 section.promocoes .container {
   width: 100%;
-  max-width: 100%;
   height: 662px;
+  max-width: 100%;
+  max-height: 100%;
   background-color: #c2185b;
   margin: 100px auto;
 }
@@ -90,7 +104,9 @@ section.promocoes .container {
 section.promocoes .container h2 {
   font-size: 44px;
   font-weight: 800;
-  height: 175px;
+  height: 26%;
+  max-width: 100%;
+  max-height: 100%;
   color: #fff;
 
   display: flex;
@@ -101,21 +117,24 @@ section.promocoes .container h2 {
 section.promocoes .produtos_em_oferta {
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 section.promocoes .produtos_em_oferta article {
   background-color: #eeeeee;
-  width: 260px;
-  height: 388px;
+  width: 21%;
+  height: 62%;
 }
 
 section.promocoes .produtos_em_oferta article .thumb {
-  width: 260px;
-  height: 300px;
+  width: 100%;
+  height: 72%;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,6 +169,7 @@ section.sandalias .container {
 section.sandalias .container .sandalia_esquerda {
   width: 50%;
   height: 100%;
+  margin: 0 10px;
 
   display: flex;
   justify-content: space-between;
@@ -159,15 +179,11 @@ section.sandalias .container .sandalia_esquerda {
 section.sandalias .container .sandalia_esquerda p {
   font-size: 39px;
   font-weight: 600;
-  margin: 0;
-  padding: 0;
 }
 
 section.sandalias .container .sandalia_esquerda .botao button {
-  width: 403px;
-  height: 99px;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
 
   font-size: 39px;
   font-weight: 600;
@@ -177,6 +193,16 @@ section.sandalias .container .sandalia_esquerda .botao button {
   padding: 23px 85px;
   border: none;
   cursor: pointer;
+}
+section.sandalias .container .sandalia_esquerda img {
+  width: 95%;
+  height: 70%;
+  margin: 50px 0;
+}
+
+section.sandalias .container .sandalia_direita img {
+  width: 95%;
+  height: 100%;
 }
 
 section.informacoes .container {
@@ -197,6 +223,7 @@ section.informacoes .container .cadastro {
   color: #575757;
 
   display: flex;
+  flex-wrap: wrap;
 }
 
 section.informacoes .container .cadastro .contato,
@@ -292,6 +319,7 @@ footer .container {
 
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 footer .container .marca {
@@ -303,6 +331,7 @@ footer .container .marca {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 footer .container .informacoes {
@@ -325,6 +354,8 @@ footer .container .informacoes .categorias,
 footer .container .informacoes .institucional {
   width: 50%;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 
   display: flex;
   justify-content: center;
@@ -336,14 +367,46 @@ footer .container .informacoes .institucional a {
   color: #ffffff;
 }
 
-@media (max-width: 800px) {
-  section.principal .container .materia_principal {
+@media (max-width: 979px) {
+  section.principal .container {
     width: 100%;
   }
-  section.principal .container .imagem_principal {
-    width: 100%;
+  section.estilo .container .imagens_principais {
+    height: 100%;
   }
-  section.principal .container .bloco_central.inverso {
-    flex-wrap: wrap-reverse;
+  section.informacoes .container .cadastro .contato,
+  section.informacoes .container .cadastro .descricao {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  footer {
+    height: 100%;
+  }
+  footer .container .informacoes,
+  footer .container .marca {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  section.estilo .container .imagens_principais .maior,
+  section.estilo .container .imagens_principais .menor {
+    width: 90%;
+  }
+
+  footer .container .informacoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  footer .container .informacoes .categorias ul,
+  footer .container .informacoes .institucional ul {
+    width: 100%;
+    height: 100%;
   }
 }
